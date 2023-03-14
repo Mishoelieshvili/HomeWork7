@@ -8,29 +8,22 @@ internal class Program
     static void Main(string[] args)
     {
 
-
-        Console.WriteLine($"Task 1");
+        Console.WriteLine($"Task 2");
         Console.WriteLine("...........\n");
         JackpotFound();
         Console.WriteLine("\n...........");
 
-        Console.WriteLine($"Task 2");
+        Console.WriteLine($"Task 3");
         Console.WriteLine("...........\n");
         int totalPoints = CalculatePoints(3, 1, 1);
         Console.WriteLine("Total points: " + totalPoints);
         Console.WriteLine("\n...........");
 
-        Console.WriteLine($"Task 3");
+        Console.WriteLine($"Task 5");
         Console.WriteLine("...........\n");
         Performances();
         Console.WriteLine("\n...........");
 
-        Console.WriteLine($"Task 4");
-        Console.WriteLine("...........\n");
-        string[] arr = { "Hello", "World", "Programming", "communication" };
-        int n = 7;
-        PrintElementOfLengthN(arr, n);
-        Console.WriteLine("\n...........");
     }
 
     static void JackpotFound()
@@ -80,31 +73,5 @@ internal class Program
 
          Console.WriteLine("The number of days Giorgi improved his performance is: " + count);
     }
-
-    public static void PrintElementOfLengthN(string[] arr, int n)
-    {
-        Console.Write("Enter the Element: ");
-        string[] input = Console.ReadLine().Split();
-
-        string result = "";
-        foreach (string s in arr)
-        {
-            if (s.Length == n)
-            {
-                result += s + ", ";
-            }
-        }
-
-        if (result.Length > 0)
-        {
-            Console.WriteLine(result.TrimEnd(',', ' '));
-        }
-        else
-        {
-            Console.WriteLine("No elements found");
-        }
-     
-    }
-
 }
 
